@@ -1,0 +1,57 @@
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="page-cover" style="background-image: url('{{.Site.Params.CoverImage}}')" id="home">
+    <div class="container home">
+        <div class="wrap">
+            <h1><span>{{.Site.Params.CoverTitle}}</span></h1>
+
+            <p><span>{{.Site.Params.CoverMessage}}</span></p>
+            <div class="credit"><a href="{{.Site.Params.CoverCreditLink}}">Photo by {{.Site.Params.CoverCredit}}</a>
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-link btn-cover" href="#about" role="button"><i class="fa fa-angle-down"></i></a>
+</header>
+
+<section class="container home-section" id="about">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>{{.Site.Params.AboutTitle}}</h2>
+
+            <p>{{.Site.Params.AboutMessage}}</p>
+
+            <p>
+                <a class="btn btn-lg btn-primary" href="/who-we-are/" role="button">Our Story <i
+                        class="fa fa-angle-double-right"></i></a>
+                <a class="btn btn-lg btn-primary" href="/contact/" role="button">Get In Touch <i
+                        class="fa fa-angle-double-right"></i></a>
+            </p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+<section class="container home-section" id="services">
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>{{.Site.Params.ServicesTitle}}</h2>
+        </div>
+    </div>
+    <div class="row home-services">
+        {{ range where .Data.Pages.ByWeight "Section" "service" }}
+        {{ .Render "li" }}
+        {{ end }}
+    </div>
+</section>
+
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}

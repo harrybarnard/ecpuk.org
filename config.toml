@@ -1,0 +1,31 @@
+baseUrl = "https://ecpuk.org/"
+languageCode = "en-gb"
+title = "Early Childhood Project"
+
+[params]
+  # Common Stuff
+  copyrightHTML = "&copy; Copyright 2007-2017 Brighton, Hove & District Early Childhood Project<br/>Registered as a charity in England & Wales, Number 1068309"
+  facebookPage = "toylibrarybrightonandhove"
+
+  # Home Page
+  coverImage = "/img/1zr3wnstnvy-aaron-burden_c.jpg"
+  coverCredit = "Aaron Burden"
+  coverCreditLink = "https://unsplash.com/@aaronburden"
+  coverTitle = "Welcome to the Early Childhood Project"
+  coverMessage = "We are a unique and innovative educational charity set up in 1988. We are based in Brighton and Hove in the United Kingdom and support individuals on the journey around equalities and inclusion. We help develop knowledge and skills that enable us to challenge and combat prejudice, discrimination and injustice in the lives of young children."
+  aboutTitle = "Who We Are"
+  aboutMessage = "We believe that all children have the right to develop in a positive environment free from prejudice and discrimination. The Project, a registered charity, works positively to combat bias of every kind in co-operation with others across Brighton and Hove. We provide information, resources and support to all those people involved in young children’s play, care and education."
+  servicesTitle = "What We Do"
+
+  # Contact Details
+  addressHTML = "<strong>Early Childhood Project</strong><br>Tarner Children's Centre<br>Ivory Place<br>Brighton, BN2 9QE<br>UNITED KINGDOM"
+  phoneNumber = "01273 294105"
+  emailAddress = "info@ecpuk.org"
+
+  # Contact Map
+  mapCoords = [50.8256, -0.1340]
+  mapZoom = 14
+  mapToken = "pk.eyJ1IjoiZWNwdWsiLCJhIjoiY2l6bDc5MGRjMDAwYjMycHBna3RndTRyYyJ9.F1-tSNFE1c4GD6BlZYGbaQ"
+  mapIcon = "/img/mapMarker.png"
+  mapIconSize = [24, 30]
+  mapIconAnchor = [12, 30]

@@ -1,0 +1,29 @@
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="post-cover" style="background-image: url('{{ .Params.cover }}')">
+    <div class="container">
+        <div class="wrap">
+            <div class="credit"><a href="{{ .Params.CoverLink }}">Photo by {{ .Params.CoverCredit }}</a></div>
+        </div>
+    </div>
+</header>
+<header class="container cover-header" id="header">
+    <div class="row text-center">
+        <h1 class="col-md-12 post-title">{{ .Title }}</h1>
+
+        <p><span>{{ .Description }}</span></p>
+    </div>
+    <a class="btn btn-link btn-cover" href="#main" role="button"><i class="fa fa-angle-down"></i></a>
+</header>
+
+{{ partial "page.html" . }}
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}

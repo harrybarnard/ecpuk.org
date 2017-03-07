@@ -1,0 +1,8 @@
+{
+  "region": "<s3-region>",
+  "params": {
+    "Bucket": "<test-bucket-name>"
+  },
+  "accessKeyId": "<your-access-key-id>",
+  "secretAccessKey": "<your-secret-access-key>"
+}
