@@ -3,7 +3,6 @@ date = "2016-09-11T04:21:41+01:00"
 weight = 5
 draft = false
 title = "Men Who Care"
-slug = "men-who-care"
 url = "/men-who-care/"
 aliases = ["/page/menwhocare/"]
 cover = "/img/tmpq5r9mboc-caroline-hernandez_c.jpg"

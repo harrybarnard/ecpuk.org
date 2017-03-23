@@ -6,7 +6,6 @@ title = "Bereavement Support"
 description = "Sensitive support with age appropriate resources for families experiencing grief and loss and those working with them."
 tags = ["Bereavement", "Outreach"]
 topics = ["Bereavement", "Outreach"]
-slug = "bereavement"
 url = "/bereavement/"
 aliases = ["/page/bereavement"]
 cover = "/img/5f5xwyplzwi-levi-saunders_c.jpg"

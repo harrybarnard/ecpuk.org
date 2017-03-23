@@ -6,7 +6,6 @@ title = "Toy Library"
 description = "A wide selection of carefully chosen resources that reflect family life and diversity and uphold an anti-bias approach to play, care and education."
 tags = ["Toy Library", "Outreach"]
 topics = ["Toy Library", "Outreach"]
-slug = "toy-library"
 url = "/toy-library/" 
 aliases = ["/page/toylibrary"]
 cover = "/img/iwa0ullrg6g-david-beale_c.jpg"
@@ -22,6 +21,8 @@ We also support families with advice, information and signposting to other appro
 We encourage positive parenting through our own good practice, excellent books and thoughfully sourced leaflets that aim to help parents, carers and those working with and supporting families and children.
 
 We help parents and carers choose age and stage appropriate books and toys and help them to develop their children's play. We have books, toys, games, dolls and puppets and resources for children from babies up to eight year olds.
+
+We provide a dedicated website for users of the Toy Library service at [toylibrarybrightonandhove.org](https://toylibrarybrightonandhove.org).
 
 ## Membership
 

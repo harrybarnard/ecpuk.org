@@ -1,0 +1,61 @@
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="container page-header" id="header">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1 class="post-title">Items tagged <code>{{ .Title | lower }}</code></h1>
+            <hr>
+        </div>
+    </div>
+</header>
+
+<section class="container main" role="main" id="main">
+    <div class="row" id="content">
+
+        <aside id="sidebar" class="col-md-3 col-md-push-9 post-sidebar">
+
+            <section class="post-share">
+                <ul class="list-inline">
+                    <li>
+                        <a class="btn btn-facebook" role="button" title="Share this page on Facebook"
+                           href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+                           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                            <i class="fa fa-facebook"></i> Share
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-twitter" role="button" title="Share this page on Twitter"
+                           href="https://twitter.com/share?text={{ .Title }}&amp;url={{ .Permalink }}"
+                           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <i class="fa fa-twitter"></i> Tweet
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <article class="col-md-9 col-md-pull-3">
+
+            <section class="post-content">
+                <ul class="list-unstyled">
+                    {{ range .Data.Pages.ByLastmod }}
+                    {{ .Render "li" }}
+                    {{ end}}
+                </ul>
+            </section>
+
+        </article>
+
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}
