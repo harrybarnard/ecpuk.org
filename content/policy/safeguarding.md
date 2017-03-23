@@ -1,7 +1,8 @@
 +++
-date = "2016-09-16T12:18:35+01:00"
+date = "2015-06-01T12:00:00+01:00"
 draft = false
 title = "Safeguarding Children and Vulnerable Adults Policy"
+description = "Early Childhood Project's policy for dealing with safeguarding children and vulnerable adults."
 aliases = ["/page/safeguarding/"]
 +++
 

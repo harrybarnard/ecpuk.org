@@ -1,11 +1,10 @@
 +++
-date = "2016-09-11T04:18:24+01:00"
+date = "2017-02-05T12:00:00+01:00"
 weight = 1
 draft = false
 title = "Toy Library"
 description = "A wide selection of carefully chosen resources that reflect family life and diversity and uphold an anti-bias approach to play, care and education."
-tags = ["Toy Library", "Outreach"]
-topics = ["Toy Library", "Outreach"]
+topics = ["outreach", "toys", "books", "family", "childminders", "students", "best practice", "diversity", "care", "education", "positive parenting", "games", "dolls", "puppets"]
 url = "/toy-library/" 
 aliases = ["/page/toylibrary"]
 cover = "/img/iwa0ullrg6g-david-beale_c.jpg"

@@ -1,8 +1,10 @@
 +++
-date = "2016-09-11T04:21:41+01:00"
+date = "2017-02-05T12:00:00+01:00"
 weight = 5
 draft = false
 title = "Men Who Care"
+description = "A support group championing the positive role men have in children's lives at home and in the workplace."
+topics = ["men", "gender", "equalities", "stereotypes", "dads", "male workers", "prejudice", "discrimination"]
 url = "/men-who-care/"
 aliases = ["/page/menwhocare/"]
 cover = "/img/tmpq5r9mboc-caroline-hernandez_c.jpg"

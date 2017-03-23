@@ -35,7 +35,7 @@
     <hr>
 </section>
 
-<section class="container home-section" id="services">
+<section class="container" id="services">
 
     <div class="row">
         <div class="col-md-12 text-center">
@@ -43,9 +43,17 @@
         </div>
     </div>
     <div class="row home-services">
-        {{ range where .Data.Pages.ByWeight "Section" "service" }}
-        {{ .Render "li" }}
+        {{ range where .Data.Pages.ByWeight "Section" "services" }}
+        {{ .Render "li-image" }}
         {{ end }}
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>
+                <a class="btn btn-lg btn-primary" href="/services/" role="button">What We Do <i
+                        class="fa fa-angle-double-right"></i></a>
+            </p>
+        </div>
     </div>
 </section>
 

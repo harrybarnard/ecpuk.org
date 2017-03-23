@@ -5,6 +5,7 @@
   "author": "Harry Barnard",
   "private": true,
   "scripts": {
+    "server": "hugo server",
     "build": "gulp build",
     "watch": "gulp watch",
     "publish": "gulp publish"
@@ -24,7 +25,8 @@
     "gulp-postcss": "~6.2.x",
     "gulp-run": "~1.7.x",
     "gulp-sourcemaps": "~1.6.x",
-    "gulp-uglify": "~1.5.x"
+    "gulp-uglify": "~1.5.x",
+    "gulp-cloudfront-invalidate-aws-publish": "~0.2.x"
   },
   "dependencies": {
     "leaflet": "~1.0.x"

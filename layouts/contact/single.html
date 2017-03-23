@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-5 col-md-offset-2">
             <ul class="media-list">
-                <li class="media">
+                <li class="media address">
                     <div class="media-left">
                         <i class="fa fa-map-marker"></i>
                     </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-5">
             <ul class="media-list">
-                <li class="media">
+                <li class="media address">
                     <div class="media-left">
                         <i class="fa fa-phone"></i>
                     </div>
@@ -33,7 +33,7 @@
                         {{.Site.Params.PhoneNumber}}
                     </div>
                 </li>
-                <li class="media">
+                <li class="media address">
                     <div class="media-left">
                         <i class="fa fa-envelope"></i>
                     </div>
@@ -41,7 +41,7 @@
                         <a href="mailto:{{.Site.Params.EmailAddress}}">{{.Site.Params.EmailAddress}}</a>
                     </div>
                 </li>
-                <li class="media">
+                <li class="media address">
                     <div class="media-left">
                         <i class="fa fa-facebook"></i>
                     </div>
@@ -53,6 +53,14 @@
         </div>
     </div>
 
+    <div class="row">
+        <article class="col-md-12">
+            <section class="post-content text-center">
+                {{ .Content }}
+            </section>
+        </article>
+    </div>
+
 </main>
 
 {{ partial "footer.html" . }}
@@ -62,6 +70,7 @@
     var mapOptions = {
         coords: {{.Site.Params.MapCoords}},
         zoom: {{.Site.Params.MapZoom}},
+        minZoom: {{.Site.Params.MapMinZoom}},
         token: {{.Site.Params.MapToken}},
         icon: {{.Site.Params.MapIcon}},
         iconSize: {{.Site.Params.MapIconSize}},

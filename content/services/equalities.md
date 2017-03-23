@@ -1,8 +1,10 @@
 +++
-date = "2016-09-11T04:18:24+01:00"
+date = "2017-02-05T12:00:00+01:00"
 weight = 3
 draft = false
 title = "Equalities Support"
+description = "Training courses for adults working with and caring for children around varied equalities and diversity issues."
+topics = ["equalities", "outreach", "race", "diversity", "gender", "play", "parenting", "childcare", "child development", "potty training", "tantrums", "sibling rivalry"]
 url = "/equalities/"
 aliases = ["/page/equalitiestraining/"]
 cover = "/img/0tkmbwnlm9e-desiree-fawn_c.jpg"

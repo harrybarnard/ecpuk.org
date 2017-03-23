@@ -14,13 +14,30 @@
 <header class="container cover-header" id="header">
     <div class="row text-center">
         <h1 class="col-md-12 post-title">{{ .Title }}</h1>
-
+        {{ if .Description }}
         <p><span>{{ .Description }}</span></p>
+        {{ end }}
     </div>
     <a class="btn btn-link btn-cover" href="#main" role="button"><i class="fa fa-angle-down"></i></a>
 </header>
 
 {{ partial "page.html" . }}
+
+<section class="container post-content">
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h4>Related Topics</h4>
+            <ul class="list-inline">
+                {{ range .Params.topics }}
+                <li>
+                    <code><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></code>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
 
 {{ partial "footer.html" . }}
 

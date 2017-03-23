@@ -1,11 +1,10 @@
 +++
-date = "2016-09-11T04:18:24+01:00"
+date = "2017-02-05T12:00:00+01:00"
 weight = 2
 draft = false
 title = "Bereavement Support"
 description = "Sensitive support with age appropriate resources for families experiencing grief and loss and those working with them."
-tags = ["Bereavement", "Outreach"]
-topics = ["Bereavement", "Outreach"]
+topics = ["bereavement", "outreach", "death", "loss", "grief"]
 url = "/bereavement/"
 aliases = ["/page/bereavement"]
 cover = "/img/5f5xwyplzwi-levi-saunders_c.jpg"

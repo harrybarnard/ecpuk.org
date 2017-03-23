@@ -7,7 +7,7 @@
 <header class="container page-header" id="header">
     <div class="row text-center">
         <div class="col-md-12">
-            <h1 class="post-title">Items tagged <code>{{ .Title | lower }}</code></h1>
+            <h1 class="post-title">{{ .Data.Singular | humanize }}: <code>{{ .Title | lower }}</code></h1>
             <hr>
         </div>
     </div>
@@ -42,7 +42,7 @@
         <article class="col-md-9 col-md-pull-3">
 
             <section class="post-content">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled media-list">
                     {{ range .Data.Pages.ByLastmod }}
                     {{ .Render "li" }}
                     {{ end}}

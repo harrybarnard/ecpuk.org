@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="container page-header" id="header">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <hr>
+        </div>
+    </div>
+</header>
+
+<section class="container main" role="main" id="main">
+    <div class="row" id="content">
+
+        <article class="col-md-12">
+
+            <section class="post-content text-center">
+                <ul class="list-inline">
+                    {{ $data := .Data }}
+                    {{ range $key, $value := .Data.Terms }}
+                    <li><code><a href="/{{ $data.Plural }}/{{ $key | urlize }}/">{{ $key | lower }}</a></code> <span class="badge">{{ len $value }}</span></li>
+                    {{ end }}
+                </ul>
+            </section>
+
+        </article>
+
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}

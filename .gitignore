@@ -44,3 +44,11 @@ gen
 /aws.json
 /public/
 /.awspublish-ecpuk.org
+/static/css/index.css
+/static/css/index.css.map
+/static/js/common.js
+/static/js/
+/static/css/
+!/static/js/
+/static/js/contact.js
+!/static/css/

@@ -1,22 +1,23 @@
+//* NAVBAR MENU *//
+
 .navbar {
   .sans-serif;
+  // Logo and title
   .navbar-brand {
-    font-weight: 800;
+    font-weight: @headings-font-weight;
     padding-left: @navbar-logo-pad;
     background: url(@navbar-logo-path) 14px center no-repeat;
     font-size: inherit;
   }
+  // Menu links
   .nav {
     li {
       a {
         text-transform: uppercase;
         font-size: 12px;
-        font-weight: 800;
+        font-weight: @headings-font-weight;
         letter-spacing: 1px;
       }
-//      a:link, a:visited {
-//        color: @white-faded;
-//      }
     }
   }
 }

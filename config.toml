@@ -2,6 +2,9 @@ baseUrl = "https://ecpuk.org/"
 languageCode = "en-gb"
 title = "Early Childhood Project"
 
+[taxonomies]
+  topic = "topics"
+
 [params]
   # Common Stuff
   copyrightHTML = "&copy; Copyright 2007-2017 Brighton, Hove & District Early Childhood Project<br/>Registered as a charity in England & Wales, Number 1068309"
@@ -25,6 +28,7 @@ title = "Early Childhood Project"
   # Contact Map
   mapCoords = [50.8256, -0.1340]
   mapZoom = 14
+  mapMinZoom = 5
   mapToken = "pk.eyJ1IjoiZWNwdWsiLCJhIjoiY2l6bDc5MGRjMDAwYjMycHBna3RndTRyYyJ9.F1-tSNFE1c4GD6BlZYGbaQ"
   mapIcon = "/img/mapMarker.png"
   mapIconSize = [24, 30]

@@ -1,8 +1,10 @@
 +++
-date = "2016-09-11T04:25:27+01:00"
+date = "2017-02-05T12:00:00+01:00"
 weight = 4
 draft = false
 title = "Jill & Jack Gender Issues"
+description = "A discussion group challenging assumptions around gender and children seeking to deconstruct stereotypes."
+topics = ["play", "gender", "equalities", "stereotypes", "gender roles", "media", "family"]
 url = "/gender-issues/" 
 aliases = ["/page/gendergroup/"]
 cover = "/img/lmycs4nwj8w-tim-gouw_c.jpg"

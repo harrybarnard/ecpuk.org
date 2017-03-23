@@ -14,6 +14,7 @@
         run = require('gulp-run'),
         autoprefixer = require('autoprefixer'),
         awspublish = require('gulp-awspublish'),
+        cloudfront = require('gulp-cloudfront-invalidate-aws-publish'),
         cleancss = require('gulp-clean-css');
 
     gulp.task('build-js', function () {
@@ -49,7 +50,9 @@
     });
 
     gulp.task('publish', ['build'], function () {
-        var publisher = awspublish.create(require('./aws.json'));
+
+        var aws = require('./aws.json'),
+            publisher = awspublish.create(aws.s3);
 
         var headers = {
             'Cache-Control': 'max-age=315360000, no-transform, public'
@@ -58,6 +61,7 @@
         return gulp.src('./public/**')
             .pipe(awspublish.gzip())
             .pipe(publisher.publish(headers))
+            .pipe(cloudfront(aws.cf))
             .pipe(publisher.cache())
             .pipe(awspublish.reporter());
     });
