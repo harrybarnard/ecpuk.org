@@ -7,14 +7,7 @@ url: "/careers/"
 
 ## Paid Positions
 
-The Early Childhood Project is recruiting for two positions this Autumn, as we have funding in place to employ an [Outreach Equalities Playworker](/dl/ecp-outreach_playworker_2017-job_app.zip) and a [Toy Library Worker](/dl/ecp-toylib_worker_2017-job_app.zip). These posts are currently part of our work commissioned by the children’s centres for [Brighton and Hove City Council](https://www.brighton-hove.gov.uk/content/children-and-education/childrens-services/childrens-centres). 
-
-Both posts are for 12 hours a week, are term time only, and are on fixed contracts from 5 September 2017 to 31 March 2018.
-
-Click the links below to download the application pack for each position.
-
-* [Outreach Equalities Playworker](/dl/ecp-outreach_playworker_2017-job_app.zip)
-* [Toy Library Worker](/dl/ecp-toylib_worker_2017-job_app.zip)
+There are currently no paid positions available.
 
 ## Volunteering
 
