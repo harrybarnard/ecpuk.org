@@ -34,7 +34,7 @@ We pro-actively encourage and develop an anti-bias approach to life by raising a
 
 ## Our Organisation
 
-The Brighton, Hove & District Early Childhood Project is an educational charity, [registered in England and Wales, number 1068309](https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1068309&SubsidiaryNumber=0). The Project is managed by it's Trustees and Executive Committee which meets monthly. The Committee is elected each year at our Annual General Meeting. [Contact us](/contact/) if you are interested in joining the Executive.
+The Brighton, Hove & District Early Childhood Project is an educational charity, [registered in England and Wales, number 1068309](https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1068309&SubsidiaryNumber=0). The Project is managed by it's Trustees and Executive Committee which meets monthly. The Committee is elected each year at our [Annual General Meeting](/agm/). [Contact us](/contact/) if you are interested in joining the Executive.
 
 
 
