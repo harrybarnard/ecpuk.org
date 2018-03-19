@@ -11,44 +11,57 @@
     <div class="row">
         <div class="col-md-5 col-md-offset-2">
             <ul class="media-list">
+            {{ if .Site.Params.Contact.Address.HTML }}
                 <li class="media address">
                     <div class="media-left">
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fas fa-map-marker fa-fw" aria-hidden="true"></i>
+                        <span class="sr-only">Address</span>
                     </div>
                     <div class="media-body">
                         <address>
-                            {{.Site.Params.AddressHTML | safeHTML}}
+                        {{ .Site.Params.Contact.Address.HTML | safeHTML }}
                         </address>
                     </div>
                 </li>
+            {{ end }}
             </ul>
         </div>
         <div class="col-md-5">
             <ul class="media-list">
+            {{ if .Site.Params.Contact.Phone.HTML }}
                 <li class="media address">
                     <div class="media-left">
-                        <i class="fa fa-phone"></i>
+                        <i class="fas fa-phone fa-fw" aria-hidden="true"></i>
+                        <span class="sr-only">Phone Number</span>
                     </div>
-                    <div class="media-body">
-                        {{.Site.Params.PhoneNumber}}
-                    </div>
+                    <div class="media-body">{{ .Site.Params.Contact.Phone.HTML }}</div>
                 </li>
+            {{ end }}
+            {{ if .Site.Params.Contact.Email.HTML }}
                 <li class="media address">
                     <div class="media-left">
-                        <i class="fa fa-envelope"></i>
+                        <i class="fas fa-envelope fa-fw" aria-hidden="true"></i>
+                        <span class="sr-only">Email Address</span>
                     </div>
                     <div class="media-body">
-                        <a href="mailto:{{.Site.Params.EmailAddress}}">{{.Site.Params.EmailAddress}}</a>
+                        <a href="mailto:{{ .Site.Params.Contact.Email.HTML }}"
+                           title="Email Us">{{ .Site.Params.Contact.Email.HTML }}</a>
                     </div>
                 </li>
+            {{end}}
+            {{ if .Site.Params.Facebook.Page }}
                 <li class="media address">
                     <div class="media-left">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fab fa-facebook fa-fw" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook Page</span>
                     </div>
                     <div class="media-body">
-                        <a href="https://www.facebook.com/{{.Site.Params.FacebookPage}}/">@{{.Site.Params.FacebookPage}}</a>
+                        <a href="https://www.facebook.com/{{ .Site.Params.Facebook.Page }}/"
+                           title="Find us on Facebook">@{{ .Site.Params.Facebook.Page }}
+                        </a>
                     </div>
                 </li>
+            {{ end }}
             </ul>
         </div>
     </div>
@@ -56,7 +69,7 @@
     <div class="row">
         <article class="col-md-12">
             <section class="post-content text-center">
-                {{ .Content }}
+            {{ .Content }}
             </section>
         </article>
     </div>
@@ -68,13 +81,13 @@
 {{ partial "foot_includes.html" . }}
 <script>
     var mapOptions = {
-        coords: {{.Site.Params.MapCoords}},
-        zoom: {{.Site.Params.MapZoom}},
-        minZoom: {{.Site.Params.MapMinZoom}},
-        token: {{.Site.Params.MapToken}},
-        icon: {{.Site.Params.MapIcon}},
-        iconSize: {{.Site.Params.MapIconSize}},
-        iconAnchor: {{.Site.Params.MapIconAnchor}}
+        coords: {{.Site.Params.Contact.Map.Coords}},
+        zoom: {{.Site.Params.Contact.Map.Zoom}},
+        minZoom: {{.Site.Params.Contact.Map.MinZoom}},
+        token: {{.Site.Params.Contact.Map.Token}},
+        icon: {{.Site.Params.Contact.Map.Icon}},
+        iconSize: {{.Site.Params.Contact.Map.IconSize}},
+        iconAnchor: {{.Site.Params.Contact.Map.IconAnchor}}
     }
 </script>
 <script src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>

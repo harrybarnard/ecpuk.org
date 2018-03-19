@@ -1,0 +1,27 @@
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="container page-header" id="header">
+    <div class="row text-center">
+        <div class="col-md-12 post-content">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <hr>
+            <p class="col-md-12">{{ .Content }}</p>
+            <p class="col-md-12">
+                <a class="btn btn-lg btn-primary" href="/our-story/" role="button">Our Story <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                <a class="btn btn-lg btn-primary" href="/how-we-work/" role="button">How We Work <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+            </p>
+        </div>
+    </div>
+</header>
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}

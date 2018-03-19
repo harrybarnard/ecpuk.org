@@ -1,10 +1,10 @@
-+++
-date = "2015-06-01T12:00:00+01:00"
-draft = false
-title = "Safeguarding Children and Vulnerable Adults Policy"
-description = "Early Childhood Project's policy for dealing with safeguarding children and vulnerable adults."
-aliases = ["/page/safeguarding/"]
-+++
+---
+date: "2015-06-01T12:00:00+01:00"
+draft: false
+title: "Safeguarding Children and Vulnerable Adults Policy"
+description: "Early Childhood Project's policy for dealing with safeguarding children and vulnerable adults."
+aliases: ["/page/safeguarding/"]
+---
 
 ## Background
 * We believe that all adults connected with the Project have the same responsibility to ensure the well-being and safety of the children, as well as those adults who may have more regular and frequent contact with them.

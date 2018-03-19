@@ -4,31 +4,31 @@
 
 {{ partial "menu.html" . }}
 
-<header class="page-cover" style="background-image: url('{{.Site.Params.CoverImage}}')" id="home">
+<header class="page-cover" style="background-image: url('{{ .Params.Cover.Image }}')" id="home">
     <div class="container home">
         <div class="wrap">
-            <h1><span>{{.Site.Params.CoverTitle}}</span></h1>
-
-            <p><span>{{.Site.Params.CoverMessage}}</span></p>
-            <div class="credit"><a href="{{.Site.Params.CoverCreditLink}}">Photo by {{.Site.Params.CoverCredit}}</a>
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+            <div class="credit">
+                <a href="{{ .Params.Cover.URL }}">Photo by {{ .Params.Cover.Credit }}</a>
             </div>
         </div>
     </div>
-    <a class="btn btn-link btn-cover" href="#about" role="button"><i class="fa fa-angle-down"></i></a>
+    <a class="btn btn-link btn-cover" href="#about" role="button" title="Scroll Down">
+        <i class="fas fa-angle-down" aria-hidden="true"></i><span class="sr-only">Scroll Down</span>
+    </a>
 </header>
 
 <section class="container home-section" id="about">
     <div class="row">
-        <div class="col-md-12 text-center">
-            <h2>{{.Site.Params.AboutTitle}}</h2>
-
-            <p>{{.Site.Params.AboutMessage}}</p>
-
+        <div class="col-md-12 text-center post-content">
+            <h2>{{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "section" "about" }}{{ .Content | safeHTML }}{{ end }}
             <p>
-                <a class="btn btn-lg btn-primary" href="/who-we-are/" role="button">Our Story <i
-                        class="fa fa-angle-double-right"></i></a>
-                <a class="btn btn-lg btn-primary" href="/contact/" role="button">Get In Touch <i
-                        class="fa fa-angle-double-right"></i></a>
+                <a class="btn btn-lg btn-primary" href="/our-story/" role="button">Our Story <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                <a class="btn btn-lg btn-primary" href="/how-we-work/" role="button">How We Work <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
             </p>
         </div>
     </div>
@@ -36,10 +36,9 @@
 </section>
 
 <section class="container" id="services">
-
     <div class="row">
         <div class="col-md-12 text-center">
-            <h2>{{.Site.Params.ServicesTitle}}</h2>
+            <h2>{{ with .Site.GetPage "section" "services" }}{{ .Title }}{{ end }}</h2>
         </div>
     </div>
     <div class="row home-services">
@@ -50,8 +49,26 @@
     <div class="row">
         <div class="col-md-12 text-center">
             <p>
-                <a class="btn btn-lg btn-primary" href="/services/" role="button">What We Do <i
-                        class="fa fa-angle-double-right"></i></a>
+                <a class="btn btn-lg btn-primary" href="/what-we-do/" role="button">What We Do <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+            </p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+<section class="container" id="involved">
+    <div class="row">
+        <div class="col-md-12 text-center post-content">
+            <h2>{{ with .Site.GetPage "section" "involved" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "section" "involved" }}{{ .Content | safeHTML }}{{ end }}
+            <p>
+                <a class="btn btn-lg btn-danger" href="/make-a-donation/" role="button">Make a Donation <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                <a class="btn btn-lg btn-success" href="https://toylibrarybrightonandhove.org" role="button">Toy Library
+                    Website <i class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                <a class="btn btn-lg btn-primary" href="/get-involved/" role="button">Get Involved <i
+                        class="fas fa-angle-double-right" aria-hidden="true"></i></a>
             </p>
         </div>
     </div>

@@ -4,6 +4,7 @@ date: 2017-10-16T19:25:01+01:00
 draft: false
 url: "/agm-2017/"
 aliases: ["/agm/"]
+description: "Information about the Early Childhood Project 2017 Annual General Meeting"
 ---
 ## Come and play and have fun at our bag-themed morning!
 

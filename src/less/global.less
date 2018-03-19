@@ -23,6 +23,9 @@ hr.small {
 .pager {
   .sans-serif;
   font-size: 80%;
+  li a {
+    text-decoration: none;
+  }
 }
 
 //* BUTTONS *//
@@ -30,6 +33,10 @@ hr.small {
 .btn {
   font-size: @font-size-btn;
   .sans-serif;
+}
+
+.btn-lg {
+  margin-bottom: 3px;
 }
 
 //* LINKS *//
@@ -153,14 +160,18 @@ a.thumbnail img:focus, a img:hover {
   }
 }
 
-// Override row
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
+//// Override row
+//.row {
+//  margin-left: 0;
+//  margin-right: 0;
+//}
 
 .well {
   border: none;
+}
+
+a.icon-link {
+  text-decoration: none;
 }
 
 blockquote {
@@ -175,16 +186,25 @@ blockquote {
   h1 {
     font-size: ceil((@font-size-h1 * 0.6));
   }
+
   h2 {
     font-size: ceil((@font-size-h2 * 0.7));
   }
+
   h3 {
     font-size: ceil((@font-size-h3 * 0.7));
   }
+
   h4 {
     font-size: ceil((@font-size-h4 * 0.8));
   }
+
   p, li, td, th, h5 {
     font-size: ceil((@font-size-base * 0.8));
   }
+
+  .btn {
+    font-size: ceil((@font-size-btn * 0.8));
+  }
+
 }

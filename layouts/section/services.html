@@ -6,17 +6,14 @@
 
 <header class="container page-header" id="header">
     <div class="row text-center">
-        <div class="col-md-12">
-            <h1 class="post-title">{{.Site.Params.ServicesTitle}}</h1>
-            {{ if .Description }}
-            <p class="col-md-12">{{ .Description }}</p>
-            {{ end }}
-
+        <div class="col-md-12 post-content">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <hr>
+            <p class="col-md-12">{{ .Content }}</p>
         </div>
     </div>
-    <hr>
-</header>
 
+</header>
 
 <section class="container main" role="main" id="main">
     <div class="row home-services" id="content">

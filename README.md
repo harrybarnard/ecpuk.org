@@ -56,5 +56,5 @@ as a guide for this.
 ## Licence
 MIT
 
-*Whilst the code is licenced under the MIT licence in the hope it helps others whishing to implement Hugo on Amazon S3/Cloudfront
+*Whilst the code is licenced under the MIT licence in the hope it helps others wishing to implement Hugo on Amazon S3/Cloudfront
 the site content remains the copyright of the Brighton, Hove & District Early Childhood Project.*

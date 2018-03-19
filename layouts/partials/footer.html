@@ -4,27 +4,31 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    {{if .Site.Params.FacebookPage}}
+                {{if .Site.Params.Facebook.Page }}
                     <li>
-                        <a href="https://www.facebook.com/{{.Site.Params.FacebookPage}}/">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        <a href="https://www.facebook.com/{{.Site.Params.Facebook.Page}}/" title="Find us on Facebook"
+                           role="button">
+                                <span class="fa-stack fa-lg" aria-hidden="true">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                                 </span>
+                            <span class="sr-only">Find us on Facebook</span>
                         </a>
                     </li>
-                    {{end}}
+                {{end}}
                     <li>
-                        <a href="/contact/">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        <a href="/contact/" title="Contact Us" role="button">
+                                <span class="fa-stack fa-lg" aria-hidden="true">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                                 </span>
+                            <span class="sr-only">Contact Us</span>
                         </a>
                     </li>
                 </ul>
-                <p class="copyright">{{.Site.Params.CopyrightHTML | safeHTML}}<br>
-                    <a href="/policy/safeguarding/">Safeguarding Children and Vulnerable Adults Policy</a></p>
+                <p class="copyright">{{ .Site.Params.Copyright.HTML | safeHTML }}<br>
+                    <a href="/policy/safeguarding/">Safeguarding Children and Vulnerable Adults Policy</a>
+                </p>
             </div>
         </div>
     </div>

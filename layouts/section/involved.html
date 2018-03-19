@@ -1,0 +1,53 @@
+{{ partial "meta.html" . }}
+
+{{ partial "head_includes.html" . }}
+
+{{ partial "menu.html" . }}
+
+<header class="container page-header" id="header">
+    <div class="row text-center">
+        <div class="col-md-12 post-content">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <hr>
+            <p class="col-md-12">{{ .Content }}</p>
+        </div>
+    </div>
+</header>
+<section class="container main" role="main" id="main">
+    <div class="row home-services" id="content">
+        <div class="col-md-4 text-center">
+            <a href="/make-a-donation/" title="Make a Donation" class="icon-link">
+                <span class="fa-stack fa-5x" aria-hidden="true">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <h2>Make a Donation</h2>
+            </a>
+
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="/join-our-community/" title="Join Our Community" class="icon-link">
+                <span class="fa-stack fa-5x" aria-hidden="true">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+                <h2>Join Our Community</h2>
+            </a>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="/work-with-us/" role="Work With Us" class="icon-link">
+                <span class="fa-stack fa-5x" aria-hidden="true">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+                </span>
+                <h2>Work With Us</h2>
+            </a>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot_includes.html" . }}
+
+{{ partial "foot.html" . }}
