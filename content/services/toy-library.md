@@ -19,7 +19,7 @@ chosen resources that reflect family life and diversity and uphold an anti-bias 
 
 We also support families with advice, information and signposting to other appropriate services.
 
-We encourage positive parenting through our own good practice, excellent books and thoughfully sourced leaflets that 
+We encourage positive parenting through our own good practice, excellent books and thoughtfully sourced leaflets that 
 aim to help parents, carers and those working with and supporting families and children.
 
 We help parents and carers choose age and stage appropriate books and toys and help them to develop their children's 

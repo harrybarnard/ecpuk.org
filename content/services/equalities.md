@@ -29,7 +29,7 @@ resources!
 Our unique overview of family life across the city has enabled ECP to hold a strategic role in planning around local 
 services for children for many years.
 
-## Equalities Support Sessions For Under 5s Services
+## Equalities Support Sessions For Under 5's Services
 
 Tailor made visits for pre-schools and crèches supporting anti-bias and inclusion work, making sure that all children 
 are represented through the resources workers use through our toy library service.
