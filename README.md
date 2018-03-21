@@ -1,6 +1,7 @@
 # Early Childhood Project Website
 
-This is the source code for the [Early Childhood Project](https://ecpuk.org) Website a Brighton, UK based children's charity.
+This is the source code for the [Early Childhood Project](https://ecpuk.org) Website a Brighton, UK based children's 
+charity.
 
 Prerequisites:
 
@@ -11,7 +12,8 @@ Prerequisites:
 
 ## Usage
 
-This is a [Hugo](https://gohugo.io/) project. Check the [Hugo Documentation](https://gohugo.io/documentation/) for more usage information.
+This is a [Hugo](https://gohugo.io/) project. Check the [Hugo Documentation](https://gohugo.io/documentation/) for more 
+usage information.
 
 ### Content Commands
 
@@ -49,9 +51,9 @@ npm run publish
 ```
 
 ### Configuration
-Hugo is configured using [config.toml](https://github.com/harrybarnard/ecpuk.org/blob/master/config.toml).  
-You'll need to create an aws.json (in the project root) file to configure your Amazon deployment. You can use [aws.example.json](https://github.com/harrybarnard/ecpuk.org/blob/master/aws.example.json)
-as a guide for this.
+Hugo is configured using [config.yml](https://github.com/harrybarnard/ecpuk.org/blob/master/config.yml).  
+You'll need to create an aws.json (in the project root) file to configure your Amazon deployment. You can use 
+[aws.example.json](https://github.com/harrybarnard/ecpuk.org/blob/master/aws.example.json) as a guide for this.
 
 ## Licence
 MIT
