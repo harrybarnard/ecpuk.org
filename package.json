@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "autoprefixer": "~6.0.x",
-    "bootstrap": "~3.3.x",
+    "bootstrap": "~3.4.x",
     "concurrent-transform": "~1.0.x",
     "gulp": "~4.0.x",
     "gulp-awspublish": "^3.4.0",
