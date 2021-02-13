@@ -1,6 +1,10 @@
 baseUrl: "https://ecpuk.org/"
 languageCode: "en-GB"
 title: "Early Childhood Project"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 taxonomies:
   topic: "topics"
@@ -8,17 +12,17 @@ taxonomies:
 params:
   description: "We are a Brighton, UK based educational charity that seeks to promote equality and diversity through play in our community."
   copyright:
-    html: "&copy; Copyright 2007-2018 Brighton, Hove & District Early Childhood Project<br/>Registered as a charity in England & Wales, Number 1068309"
+    html: "&copy; Copyright 2007-2021 Brighton, Hove & District Early Childhood Project<br/>Registered as a charity in England & Wales, Number 1068309"
   facebook:
     page: "toylibrarybrightonandhove"
     adminId: "1813667072187603"
+  youtube:
+    name: "Our YouTube Channel"
+    channel: "UC_vc39YCrfqvr03XbLaRFJw"
   contact:
     address:
       string: "Early Childhood Project, Tarner Children's Centre, Ivory Place, Brighton, BN2 9QE, UNITED KINGDOM"
       html: "<strong>Early Childhood Project</strong><br>Tarner Children's Centre<br>Ivory Place<br>Brighton, BN2 9QE<br>UNITED KINGDOM"
-    phone:
-      string: "01273294105"
-      html: "01273 294105"
     email:
       string: "info@ecpuk.org"
       html: "info@ecpuk.org"
@@ -26,7 +30,6 @@ params:
       coords: [50.8256, -0.1340]
       zoom: 14
       minZoom: 5
-      token: "pk.eyJ1IjoiZWNwdWsiLCJhIjoiY2l6bDc5MGRjMDAwYjMycHBna3RndTRyYyJ9.F1-tSNFE1c4GD6BlZYGbaQ"
       icon: "/img/mapMarker.png"
       iconSize: [24, 30]
       iconAnchor: [12, 30]

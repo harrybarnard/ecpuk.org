@@ -181,6 +181,20 @@ blockquote {
   }
 }
 
+.alert {
+  margin-bottom: @box-pad * 2;
+
+  .btn-bar {
+    padding-top: @box-pad;
+  }
+}
+
+.alert-danger {
+  color: @brand-danger;
+  background-color: lighten(@brand-danger, 40%);
+  border-color: @brand-danger;
+}
+
 // Set font sizes for really narrow screens
 @media (max-width: @cover-break-width) {
   h1 {

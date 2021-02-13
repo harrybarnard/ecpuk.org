@@ -16,6 +16,18 @@
                         </a>
                     </li>
                 {{end}}
+                {{if .Site.Params.Youtube.Channel }}
+                    <li>
+                        <a href="https://www.youtube.com/channel/{{.Site.Params.Youtube.Channel}}/" title="Find us on YouTube"
+                           role="button">
+                                <span class="fa-stack fa-lg" aria-hidden="true">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            <span class="sr-only">Find us on YouTube</span>
+                        </a>
+                    </li>
+                {{end}}
                     <li>
                         <a href="/contact/" title="Contact Us" role="button">
                                 <span class="fa-stack fa-lg" aria-hidden="true">

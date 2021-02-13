@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="row home-services">
-        {{ range where .Data.Pages.ByWeight "Section" "services" }}
+        {{ range where .Site.RegularPages.ByWeight "Section" "services" }}
         {{ .Render "li-image" }}
         {{ end }}
     </div>
@@ -51,6 +51,8 @@
             <p>
                 <a class="btn btn-lg btn-primary" href="/what-we-do/" role="button">What We Do <i
                         class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+                        <a class="btn btn-danger btn-lg" href="/covid/">Our Services During the
+                            Pandemic <i class="fa fa-angle-double-right"></i></a>
             </p>
         </div>
     </div>
