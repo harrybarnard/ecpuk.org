@@ -46,13 +46,13 @@
     });
 
     gulp.task('watch-js', gulp.series('build-js', function (done) {
-        gulp.watch('src/js/*.js', ['build-js']);
+        gulp.watch('src/js/*.js', gulp.series('build-js'));
 
         done();
     }));
 
     gulp.task('watch-less', gulp.series('build-less', function (done) {
-        gulp.watch('src/less/**/*.less', ['build-less']);
+        gulp.watch('src/less/**/*.less', gulp.series('build-less'));
 
         done();
     }));
