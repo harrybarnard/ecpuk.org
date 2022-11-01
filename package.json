@@ -21,7 +21,7 @@
     "gulp-awspublish": "^3.4.0",
     "gulp-clean-css": "~2.0.x",
     "gulp-cloudfront-invalidate-aws-publish": "^0.2.3",
-    "gulp-expect-file": "~0.0.x",
+    "gulp-expect-file": "~2.0.x",
     "gulp-less": "~3.1.x",
     "gulp-postcss": "~6.2.x",
     "gulp-run": "~1.7.x",
